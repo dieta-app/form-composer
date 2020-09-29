@@ -1,0 +1,481 @@
+{
+  "data": [
+    {
+      "step": "1",
+      "checkpoint": "General Gastrointestinal Health Survey",
+      "checkpointSubtext": "",
+      "component": {
+        "element": "CustomContentSection",
+        "html": "<div style=\"width: 100%; text-align: center;\"><img style=\"max-width: 130px\" src=\"https://dieta-https-production.s3-us-west-2.amazonaws.com/assets/gifs/checklist.gif\" /></div><p style=\"max-width: 600px; font-family: proxima-nova;\">Completing this quick 3-5 minute survey will help Dieta understand your GI health in general. We'll ask which symptoms you experience, and what you've tried successfully or unsuccessfully to do to resolve them. After you finish, our system will process the results using an algorithm developed by gastroenterologists, dietitians, and data scientists to give you your first personalized recommendations. As you track more data in the app, our AI will improve over time and be able to give you more specific recommendations for how you can improve your symptoms with new diets, medications, supplements, or lifestyle changes.</p>"
+      }
+    },
+    {
+      "step": "2",
+      "questionLabel": "1",
+      "question": "Which of the following GI symptoms do you have?",
+      "questionSubtext": "If you don't have any of these, select N/A!",
+      "component": {
+        "element": "MultiSelectQuestion",
+        "props": {
+          "choices": [
+            {
+              "option": "Diarrhea"
+            },
+            {
+              "option": "Constipation"
+            },
+            {
+              "option": "Nausea/Vomiting"
+            },
+            {
+              "option": "Reflux/Heartburn"
+            },
+            {
+              "option": "Abdominal Pain"
+            },
+            {
+              "option": "Gas that improves with belching"
+            },
+            {
+              "option": "Gas that improves with flatulence (farting)"
+            },
+            {
+              "option": "Bloating/Distention that improves with neither belching nor flatulence"
+            },
+            {
+              "option": "Feeling full early"
+            },
+            {
+              "option": "N/A"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "3",
+      "questionLabel": "2",
+      "question": "What other non-GI symptoms do you have?",
+      "questionSubtext": "If you don't have any of these, select N/A!",
+      "component": {
+        "element": "MultiSelectQuestion",
+        "props": {
+          "choices": [
+            {
+              "option": "Depressed moods"
+            },
+            {
+              "option": "Anxiety"
+            },
+            {
+              "option": "Fearfulness"
+            },
+            {
+              "option": "Difficulty sleeping"
+            },
+            {
+              "option": "Weight loss"
+            },
+            {
+              "option": "Pain outside the gastrointestinal tract"
+            },
+            {
+              "option": "N/A"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "4",
+      "questionLabel": "3",
+      "question": "Have these diets helped any of your symptoms?",
+      "questionSubtext": "*If you did not try any one of the below items, select 'Didn't try this' or skip* A low gas diet includes things like Beans, Celery, Carrots, Raisins, Banans, Apricots, Brussel Sprouts, Prunes, Cabbage, Onions, Brussel Spouts, Potatoes, Broccoli, Wheat germ, Pretzels, Bagels, Alcohol, Caffeine.",
+      "component": {
+        "element": "SelectColumnarQuestion",
+        "props": {
+          "columns": [
+            "Didn't try this",
+            "Tried but didn't help my symptoms",
+            "Tried and it helped",
+            "Not Sure",
+            "Other / Not applicable"
+          ],
+          "defaultSelected": null,
+          "choices": [
+            {
+              "option": "Low gas diet (see above)"
+            },
+            {
+              "option": "Dairy/lactose-free diet"
+            },
+            {
+              "option": "Gluten-free diet for 2 weeks"
+            },
+            {
+              "option": "The low FODMAPs diet for 2-3 weeks"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "5",
+      "questionLabel": "4",
+      "question": "Have these dietary changes helped any of your symptoms?",
+      "questionSubtext": "*If you did not try any one of the below items, select 'Didn't try this' or skip*",
+      "component": {
+        "element": "SelectColumnarQuestion",
+        "props": {
+          "columns": [
+            "Didn't try this",
+            "Tried but didn't help",
+            "Tried and it helped",
+            "Not Sure",
+            "Other / Not applicable"
+          ],
+          "defaultSelected": null,
+          "choices": [
+            {
+              "option": "Trying Ginger (Dietary or Supplements)"
+            },
+            {
+              "option": "Reducing Fatty meals"
+            },
+            {
+              "option": "Reducing Chocolate"
+            },
+            {
+              "option": "Reducing Peppermint"
+            },
+            {
+              "option": "Reducing Caffeine"
+            },
+            {
+              "option": "Significantly reducing alcohol"
+            },
+            {
+              "option": "Smaller, more frequent (4-5x) meals daily"
+            },
+            {
+              "option": "Smaller meals specifically at dinnertime"
+            },
+            {
+              "option": "Reducing Spicy Foods"
+            },
+            {
+              "option": "Reducing Carbonated/Fizzy drinks"
+            },
+            {
+              "option": "Stopping each of your medications, supplements, herbals one by one"
+            },
+            {
+              "option": "Reducing fiber-rich foods"
+            },
+            {
+              "option": "Increasing fiber in your diet (or with supplements)"
+            },
+            {
+              "option": "Blenderizing your food"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "6",
+      "questionLabel": "5",
+      "question": "Have these lifestyle changes helped any of your symptoms?",
+      "questionSubtext": "*If you did not try any one of the below items, select 'Didn't try this' or skip*",
+      "component": {
+        "element": "SelectColumnarQuestion",
+        "props": {
+          "columns": [
+            "Didn't try this",
+            "Tried but didn't help",
+            "Tried and it helped",
+            "Not Sure",
+            "Other / Not applicable"
+          ],
+          "defaultSelected": null,
+          "choices": [
+            {
+              "option": "Breathing exercises during episodes"
+            },
+            {
+              "option": "Wedge pillow beneath your mattress"
+            },
+            {
+              "option": "Finishing Dinner 2+ hours before reclining or sleeping"
+            },
+            {
+              "option": "Slowing how fast you eat"
+            },
+            {
+              "option": "Avoiding talking during meals"
+            },
+            {
+              "option": "Wearing less tightly fitting clothing"
+            },
+            {
+              "option": "Losing weight (if applicable)"
+            },
+            {
+              "option": "Drinking more water"
+            },
+            {
+              "option": "Stopping Smoking"
+            },
+            {
+              "option": "Scheduled exercise, increased physical movement"
+            },
+            {
+              "option": "Biofeedback (with a specialist)"
+            },
+            {
+              "option": "Limiting time on the toilet (e.g. no reading)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "7",
+      "questionLabel": "6",
+      "question": "Have these antibiotics helped any of your symptoms?",
+      "questionSubtext": "*If you did not try any one of the below items, select 'Didn't try this' or skip*",
+      "component": {
+        "element": "SelectColumnarQuestion",
+        "props": {
+          "columns": [
+            "Didn't try this",
+            "Tried but didn't help",
+            "Tried and it helped",
+            "Not Sure",
+            "Other / Not applicable"
+          ],
+          "defaultSelected": null,
+          "choices": [
+            {
+              "option": "Rifaximin alone (e.g. Xifaxin™ , Zaxine™)"
+            },
+            {
+              "option": "Rifaximin with Neomycin"
+            },
+            {
+              "option": "Amoxicilin-Clavulanate (e.g. Augmentin™, Amoxi-Clav™; Clavulin™)"
+            },
+            {
+              "option": "Norfloxacin (e.g. Apo-Norflox™)"
+            },
+            {
+              "option": "Ciprofloxacin (e.g. Cipro™)"
+            },
+            {
+              "option": "Metronidazole (e.g. Flagyl)"
+            },
+            {
+              "option": "Cefalexin (e.g. Cephalex™, Keflex™)"
+            },
+            {
+              "option": "Trimethoprim-Sulfamethoxazole (e.g. Bactrim™, Septra™, Sulfatrim™, Trisulfa™, Protrin™)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "8",
+      "questionLabel": "7",
+      "questionPrefix": "Nausea/Esophagus Medications:",
+      "question": "Have these medication changes helped any of your symptoms?",
+      "questionSubtext": "*If you did not try any one of the below items, select 'Didn't try this'* or skip",
+      "component": {
+        "element": "SelectColumnarQuestion",
+        "props": {
+          "columns": [
+            "Didn't try this",
+            "Tried but didn't help",
+            "Tried and it helped",
+            "Not Sure",
+            "Other / Not applicable"
+          ],
+          "defaultSelected": null,
+          "choices": [
+            {
+              "option": "Trying Antacids (incl. Proton Pump Inhibitors)"
+            },
+            {
+              "option": "Trying Ondansetron (Zofran)"
+            },
+            {
+              "option": "Trying Vitamin B6"
+            },
+            {
+              "option": "Trying Dronabinol"
+            },
+            {
+              "option": "Trying Metoclopramide"
+            },
+            {
+              "option": "Trying Prochlorphenazine"
+            },
+            {
+              "option": "Trying Scopolamine"
+            },
+            {
+              "option": "Stopping Opiates"
+            },
+            {
+              "option": "Stopping Marijuana for 2 weeks"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "9",
+      "questionLabel": "8",
+      "questionPrefix": "Psychiatric Medications:",
+      "question": "Have these medication changes helped any of your symptoms?",
+      "questionSubtext": "*If you did not try any one of the below items, select 'Didn't try this'* or skip",
+      "component": {
+        "element": "SelectColumnarQuestion",
+        "props": {
+          "columns": [
+            "Didn't try this",
+            "Tried but didn't help",
+            "Tried and it helped",
+            "Not Sure",
+            "Other / Not applicable"
+          ],
+          "defaultSelected": null,
+          "choices": [
+            {
+              "option": "Tricyclic Antidepressant"
+            },
+            {
+              "option": "SSRIs"
+            },
+            {
+              "option": "SNRIs"
+            },
+            {
+              "option": "Mirtazapine"
+            },
+            {
+              "option": "Benzodiazepines"
+            },
+            {
+              "option": "Aprepitant"
+            },
+            {
+              "option": "\"Atypical Antipsychotics\" used off-label"
+            },
+            {
+              "option": "Buspirone (Buspar™)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "10",
+      "questionLabel": "9",
+      "questionPrefix": "Gut Motility Medications:",
+      "question": "Have these medication changes helped any of your symptoms?",
+      "questionSubtext": "*If you did not try any one of the below items, select 'Didn't try this'* or skip",
+      "component": {
+        "element": "SelectColumnarQuestion",
+        "props": {
+          "columns": [
+            "Didn't try this",
+            "Tried but didn't help",
+            "Tried and it helped",
+            "Not Sure",
+            "Other / Not applicable"
+          ],
+          "defaultSelected": null,
+          "choices": [
+            {
+              "option": "Loperamide (Immodium™) before meals"
+            },
+            {
+              "option": "Eluxadoline (Viberzi™)"
+            },
+            {
+              "option": "Magnesium Citrate"
+            },
+            {
+              "option": "Linaclotide (e.g. Linzess™)"
+            },
+            {
+              "option": "Lubiprostone (e.g. Amitiza™)"
+            },
+            {
+              "option": "Polyethylene Glycol"
+            },
+            {
+              "option": "Plecanatide (e.g. Trulance™)"
+            },
+            {
+              "option": "Prucalopride (e.g. Resotran™)"
+            },
+            {
+              "option": "Diphenoxylate with Atropine (Lomotil™)"
+            },
+            {
+              "option": "Domperidone"
+            },
+            {
+              "option": "Alosetron (Lotronex™)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "11",
+      "questionLabel": "10",
+      "questionPrefix": "Other Medications:",
+      "question": "Have these medication changes helped any of your symptoms?",
+      "questionSubtext": "*If you did not try any one of the below items, select 'Didn't try this' or skip*",
+      "component": {
+        "element": "SelectColumnarQuestion",
+        "props": {
+          "columns": [
+            "Didn't try this",
+            "Tried but didn't help",
+            "Tried and it helped",
+            "Not Sure",
+            "Other / Not applicable"
+          ],
+          "defaultSelected": null,
+          "choices": [
+            {
+              "option": "Anti-Spasmodics"
+            },
+            {
+              "option": "Bismuth (Pepto-Bismol™)"
+            },
+            {
+              "option": "Alpha-galactosidase (Beano™)"
+            },
+            {
+              "option": "Cholestyramine, Colestipol, or Colesevalam"
+            },
+            {
+              "option": "Baclofen"
+            },
+            {
+              "option": "Lozenges or chewing gum during episodes"
+            },
+            {
+              "option": "Gabapentinoids"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

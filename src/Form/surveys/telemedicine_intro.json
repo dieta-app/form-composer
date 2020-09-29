@@ -1,0 +1,125 @@
+{
+  "data": [
+    {
+      "step": "1",
+      "questionLabel": "1",
+      "question": "What is your name as it appears on prescriptions?",
+      "component": {
+        "element": "SimpleTextInputQuestion",
+        "props": {
+          "label": "Firstname Lastname",
+          "pattern": {
+            "body": "[a-zA-Z0-9]+",
+            "flags": "gi"
+          }
+        }
+      }
+    },
+    {
+      "step": "2",
+      "questionLabel": "2",
+      "question": "What is your date of birth?",
+      "component": {
+        "element": "SimpleTextInputQuestion",
+        "props": {
+          "label": "MM/DD/YYYY",
+          "pattern": {
+            "body": "^\\d{2}\/\\d{2}\/\\d{4}$",
+            "flags": "gi"
+          }
+        }
+      }
+    },
+    {
+      "step": "3",
+      "questionLabel": "3",
+      "question": "What is the name of your insurance company?",
+      "component": {
+        "element": "SimpleTextInputQuestion",
+        "props": {
+          "label": "Insurance Company Name",
+          "pattern": {
+            "body": "[a-zA-Z0-9]+",
+            "flags": "gi"
+          }
+        }
+      }
+    },
+    {
+      "step": "4",
+      "questionLabel": "4",
+      "question": "What is your Member ID?",
+      "component": {
+        "element": "SimpleTextInputQuestion",
+        "props": {
+          "label": "Member ID",
+          "pattern": {
+            "body": "[a-zA-Z0-9]+",
+            "flags": "gi"
+          }
+        }
+      }
+    },
+    {
+      "step": "5",
+      "questionLabel": "5",
+      "question": "What is your Group ID?",
+      "component": {
+        "element": "SimpleTextInputQuestion",
+        "props": {
+          "label": "Group ID",
+          "pattern": {
+            "body": "[a-zA-Z0-9]+",
+            "flags": "gi"
+          }
+        }
+      }
+    },
+    {
+      "step": "6",
+      "questionLabel": "6",
+      "question": "What is your residence address?",
+      "component": {
+        "element": "SimpleTextInputQuestion",
+        "props": {
+          "label": "Patient Address",
+          "pattern": {
+            "body": "[a-zA-Z0-9]+",
+            "flags": "gi"
+          }
+        }
+      }
+    },
+    {
+      "step": "7",
+      "questionLabel": "7",
+      "question": "What is your cell / primary contact number?",
+      "component": {
+        "element": "SimpleTextInputQuestion",
+        "props": {
+          "label": "Phone Number",
+          "pattern": {
+            "body": "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$",
+            "flags": "gi"
+          }
+        }
+      }
+    },
+    {
+      "step": "8",
+      "questionLabel": "8",
+      "question": "What is your home / work contact number (optional)?",
+      "component": {
+        "element": "SimpleTextInputQuestion",
+        "props": {
+          "optional": true,
+          "label": "Phone Number",
+          "pattern": {
+            "body": "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$",
+            "flags": "gi"
+          }
+        }
+      }
+    }
+  ]
+}
