@@ -85,7 +85,7 @@ callback which fires when the last question has been answered
 string<integer>:
 an integer string pointing to where the form focus should start when rendering the survey. only used on init
 
-### `states
+### `states`
 array<object>:
 this is where the form content template should be passed. any already answered questions should first be merged into the template before rendering `FormProvider`
 
